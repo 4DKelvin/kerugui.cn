@@ -1,9 +1,9 @@
 var fs = require("fs"),
     qiniu = require("qiniu");
 //七牛配置
-qiniu.conf.ACCESS_KEY = "7dRQxdIWcAOGCeOxy8_-JqH0hkYMRwbeu5p6KZ0O";
-qiniu.conf.SECRET_KEY = "DQXyFybgjmjqE0LQGPm4JkVNxNlvKCqsPT6Ukiff";
-qiniu.conf.BUCKET_NAME = "imageload";
+qiniu.conf.ACCESS_KEY = "WSP2gyZHZ_MqlxsDFRIjffo2xhND4G4vaTbwmzZO";
+qiniu.conf.SECRET_KEY = "7AnEc6w6qoGgk6Rihka7N-0zZlZI7Ilcidvy4LPO";
+qiniu.conf.BUCKET_NAME = "kerugui-cn";
 
 //上传的目录
 var UPLOAD_DIR = 'resources';
