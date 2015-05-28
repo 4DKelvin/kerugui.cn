@@ -1,0 +1,30 @@
+{
+  "name"           : "kerugui.cn",
+  "version"        : "1.0.0",
+  "description"    : "客如归官网",
+  "main"           : "release.js",
+  "scripts"        : {
+    "start"  : "nodemon server.js",
+    "release": "node release.js"
+  },
+  "repository"     : {
+    "type": "git",
+    "url" : "git+https://github.com/4DKelvin/kerugui.cn.git"
+  },
+  "keywords"       : [
+    "website"
+  ],
+  "author"         : "Kelvin",
+  "license"        : "ISC",
+  "bugs"           : {
+    "url": "https://github.com/4DKelvin/kerugui.cn/issues"
+  },
+  "homepage"       : "https://github.com/4DKelvin/kerugui.cn#readme",
+  "dependencies"   : {
+    "express": "^4.12.4"
+  },
+  "devDependencies": {
+    "qiniu"  : "^6.1.2",
+    "nodemon": "^1.3.0"
+  }
+}
