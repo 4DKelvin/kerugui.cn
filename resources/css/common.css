@@ -906,11 +906,21 @@ a:hover {
 
 #footer .link ul li {
   font-size : 12px;
+  float     : left;
+  width     : 60px;
+}
+
+#footer .link .cpyright li {
+  float : none;
+  width : auto;
 }
 
 #footer .link ul .tit {
   font-size : 16px;
   color     : #333333;
+  width     : auto;
+  display   : block;
+  float     : none;
 }
 
 #footer .link ul .logo {
@@ -954,7 +964,7 @@ a:hover {
   height     : 477px;
   background : url(../images/weixinFloat.png);
   position   : absolute;
-  left       : 40px;
+  left       : 10px;
   top        : -408px;
   z-index    : 200;
   display    : none;
@@ -1077,6 +1087,7 @@ a:hover {
 }
 
 .about-box {
+  position      : relative;
   overflow      : hidden;
   margin-bottom : 20px;
 }
@@ -1198,7 +1209,43 @@ a:hover {
 }
 
 #caseTips {
-  margin-top     : 40px;
+  margin-top     : 50px;
+  height         : 300px;
+  padding-bottom : 100px;
+  border-bottom  : 1px solid #EAEAEA;
+}
+
+#tips {
+  display    : block;
+  clear      : both;
+  text-align : center;
+}
+
+#tips dl:hover dd {
+  border-color : #FFD600;
+}
+
+#tips dl {
+  display : inline-block;
+  margin  : 20px 30px;
+  cursor  : pointer;
+}
+
+#tips dt .inc {
+  display    : block;
+  width      : 100px;
+  height     : 100px;
+  background : #FFD600;
+}
+
+#tips dd {
+  display       : block;
+  margin        : 5px 0;
+  border-bottom : 1px solid #EAEAEA;
+}
+
+#caseMobile {
+  margin-top     : 50px;
   height         : 400px;
   padding-bottom : 100px;
   border-bottom  : 1px solid #EAEAEA;
@@ -1233,4 +1280,36 @@ a:hover {
   display : block;
   width   : 100%;
   height  : 100%;
+}
+
+figure.sev {
+  margin-left   : 20px;
+  float         : left;
+  height        : 227px;
+  width         : 128px;
+  border        : 3px solid #EAEAEA;
+  border-radius : 3px;
+}
+
+.about-box.sev {
+  float : left;
+  width : 450px;
+}
+
+.about-box.sev p {
+  margin-bottom : 15px;
+}
+
+.qr-code.sev {
+  position : absolute;
+  top      : -15px;
+  right    : -15px;
+  width    : 100px;
+  height   : 100px;
+}
+
+#activities {
+  margin-top    : 50px;
+  height        : 1060px;
+  border-bottom : 1px solid #EAEAEA
 }
