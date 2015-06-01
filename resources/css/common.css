@@ -1246,7 +1246,7 @@ a:hover {
 
 #caseMobile {
   margin-top     : 50px;
-  height         : 400px;
+  height         : 1000px;
   padding-bottom : 100px;
   border-bottom  : 1px solid #EAEAEA;
 }
@@ -1289,6 +1289,12 @@ figure.sev {
   width         : 128px;
   border        : 3px solid #EAEAEA;
   border-radius : 3px;
+  overflow      : hidden;
+}
+
+figure.sev img {
+  height   : 100%;
+  position : relative;
 }
 
 .about-box.sev {
@@ -1312,4 +1318,128 @@ figure.sev {
   margin-top    : 50px;
   height        : 1060px;
   border-bottom : 1px solid #EAEAEA
+}
+
+.wkz .layer1 {
+  top  : 150px;
+  left : 80px;
+}
+
+.wyx .layer1 {
+  top   : 100px;
+  right : 0px;
+}
+
+.wkz img, .wyx img, .wzz img {
+  display    : inline-block;
+  height     : 300px;
+  position   : relative;
+  z-index    : 101;
+  box-shadow : 0 0 15px 0 #000000;
+}
+
+.wkz .p1, .wkz .p3 {
+  top     : -100px;
+  z-index : 100;
+}
+
+.wzz {
+  position : relative;
+}
+
+.wzz .layer1 {
+  left       : 50px;
+  margin-top : 100px;
+}
+
+.wzz .p2 {
+  left : -50px;
+}
+
+.wzz .p1, .wzz .p3 {
+  top     : 80px;
+  z-index : 100;
+}
+
+.wzz .p3 {
+  left     : 260px;
+  position : absolute;
+}
+
+.wkz .p3 {
+  left : -50px;
+}
+
+.wkz .p1, .wzz .p3 {
+  right : -50px;
+}
+
+.wyx .p1, .wyx .p3 {
+  top     : -50px;
+  z-index : 100;
+}
+
+.wyx .p2 {
+  left : -40px;
+}
+
+.wyx .p3 {
+  left : -80px;
+}
+
+.wyx .p4 {
+  left : -100px;
+}
+
+.wzf .layer1 {
+  top : 10px;
+}
+
+.wzf img {
+  display    : inline-block;
+  width      : 90%;
+  left       : 5%;
+  top        : 100px;
+  position   : relative;
+  box-shadow : 0 0 15px 0 #000000;
+}
+
+.wfx .layer1 {
+  margin-top : 150px;
+  text-align : center;
+}
+
+.wfx .p {
+  border-radius       : 15px;
+  width               : 100px;
+  height              : 100px;
+  background-repeat   : no-repeat;
+  background-position : center;
+  display             : inline-block;
+  margin              : 15px;
+}
+
+.wfx .p1 {
+  background-image : url('../images/w1.png');
+}
+
+.wfx .p2 {
+  background-image : url('../images/w2.png');
+  background-size  : 150px;
+}
+
+.wfx .p3 {
+  background-image : url('../images/w3.png');
+  background-size  : 200px;
+}
+
+.wfx .p4 {
+  background-image : url('../images/w4.png');
+  background-size  : 130px;
+}
+
+.wfx .p5 {
+  background-image    : url('../images/w5.png');
+  background-size     : 200px;
+  background-position : center -2px;
 }
