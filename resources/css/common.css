@@ -928,25 +928,13 @@ a:hover {
   height : 40px;
 }
 
-#footer .link ul .sina, #footer .wrap ul .weixin {
-  width      : 29px;
-  height     : 24px;
-  display    : block;
-  background : url(../images/iconShare.png);
-  float      : left;
-}
-
-#footer .link ul .weixin {
-  background-position : 0 24px;
-  margin-left         : 30px;
-}
-
-#footer .link ul .sina:hover {
-  background-position : 29px 0;
-}
-
-#footer .link ul .weixin:hover {
-  background-position : 29px 24px;
+#footer .wrap ul .weixin {
+  width       : 24px;
+  height      : 24px;
+  display     : block;
+  background  : url(../images/iconShare.png);
+  float       : left;
+  margin-left : 35px;
 }
 
 #footer .link .sinaFloat {
@@ -1222,7 +1210,7 @@ a:hover {
 }
 
 #tips dl:hover dd {
-  border-color : #FFD600;
+  border-color : rgb(59, 195, 145);
 }
 
 #tips dl {
@@ -1232,10 +1220,8 @@ a:hover {
 }
 
 #tips dt .inc {
-  display    : block;
-  width      : 100px;
-  height     : 100px;
-  background : #FFD600;
+  display : block;
+  padding : 20px;
 }
 
 #tips dd {
