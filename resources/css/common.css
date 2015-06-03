@@ -361,13 +361,6 @@ a:hover {
   padding-top : 70px;
 }
 
-#service h2 {
-  width      : 100%;
-  height     : 50px;
-  margin     : 70px 0 25px 0;
-  background : url(../images/serviceTitleBg.png) center 0 no-repeat;
-}
-
 #service .tit1 {
   background-position : center -50px;
 }
@@ -588,7 +581,12 @@ a:hover {
 
 /*about*/
 #about {
-  margin-top : 130px;
+  padding-top : 100px;
+}
+
+#about .wrap {
+  padding-bottom : 40px;
+  border-bottom  : 1px solid #EAEAEA;
 }
 
 #about .tit1 {
@@ -670,23 +668,23 @@ a:hover {
 }
 
 /*caseList*/
-#caseList .wrap {
-  margin-top     : 140px;
+#caseList .wrap, #products .wrap {
+  padding-top    : 100px;
   padding-bottom : 100px;
   border-bottom  : 1px solid #EAEAEA;
 }
 
-#caseList .caseTit {
+#caseList .caseTit, #products .caseTit {
   width      : 100%;
   height     : 50px;
   background : url(../images/caseTitle.png) center 0 no-repeat;
 }
 
-#caseList .list {
+#caseList .list, #products .list {
   margin-top : 30px;
 }
 
-#caseList .case {
+#caseList .case, #products .case {
   width    : 500px;
   height   : 500px;
   overflow : hidden;
@@ -694,22 +692,22 @@ a:hover {
   position : relative;
 }
 
-#caseList .w1000 {
+#products .w1000 {
   width : 1000px;
 }
 
-#caseList .case a {
+.case a {
   width   : 100%;
   height  : 100%;
   display : block;
 }
 
-#caseList .layer1, #caseList .layer2 {
+#products .layer1, #products .layer2 {
   position : absolute;
   z-index  : 5;
 }
 
-#caseList .szwb .layer1 {
+#products .szwb .layer1 {
   width       : 540px;
   height      : 350px;
   background  : url(../images/case_2.png);
@@ -719,7 +717,7 @@ a:hover {
   _filter     : progid:DXImageTransform.Microsoft.AlphaImageLoader(sizingMethod=crop, src='images/case_2.png');
 }
 
-#caseList .szwb .layer2 {
+#products .szwb .layer2 {
   width       : 270px;
   height      : 120px;
   background  : url(../images/case_3.png);
@@ -729,7 +727,7 @@ a:hover {
   _filter     : progid:DXImageTransform.Microsoft.AlphaImageLoader(sizingMethod=crop, src='images/case_3.png');
 }
 
-#caseList .qzbd .layer1 {
+#products .qzbd .layer1 {
   width       : 260px;
   height      : 123px;
   background  : url(../images/case_16.png);
@@ -739,7 +737,7 @@ a:hover {
   _filter     : progid:DXImageTransform.Microsoft.AlphaImageLoader(sizingMethod=crop, src='images/case_16.png');
 }
 
-#caseList .qzbd .layer2 {
+#products .qzbd .layer2 {
   width       : 262px;
   height      : 286px;
   background  : url(../images/case_17.png);
@@ -749,7 +747,7 @@ a:hover {
   _filter     : progid:DXImageTransform.Microsoft.AlphaImageLoader(sizingMethod=crop, src='images/case_17.png');
 }
 
-#caseList .zhly .layer1 {
+#products .zhly .layer1 {
   width       : 284px;
   height      : 455px;
   background  : url(../images/case_6.png);
@@ -759,7 +757,7 @@ a:hover {
   _filter     : progid:DXImageTransform.Microsoft.AlphaImageLoader(sizingMethod=crop, src='images/case_6.png');
 }
 
-#caseList .zhly .layer2 {
+#products .zhly .layer2 {
   width       : 200px;
   height      : 120px;
   background  : url(../images/case_7.png);
@@ -769,11 +767,11 @@ a:hover {
   _filter     : progid:DXImageTransform.Microsoft.AlphaImageLoader(sizingMethod=crop, src='images/case_7.png');
 }
 
-#caseList .yhachina {
+#products .yhachina {
   background : #35CD64;
 }
 
-#caseList .yhachina .layer1 {
+#products .yhachina .layer1 {
   width       : 320px;
   height      : 120px;
   background  : url(../images/case_8.png);
@@ -783,7 +781,7 @@ a:hover {
   _filter     : progid:DXImageTransform.Microsoft.AlphaImageLoader(sizingMethod=crop, src='images/case_8.png');
 }
 
-#caseList .yhachina .layer2 {
+#products .yhachina .layer2 {
   width       : 594px;
   height      : 335px;
   background  : url(../images/case_9.png);
@@ -793,11 +791,11 @@ a:hover {
   _filter     : progid:DXImageTransform.Microsoft.AlphaImageLoader(sizingMethod=crop, src='images/case_9.png');
 }
 
-#caseList .igobuy {
+#products .igobuy {
   background : #20201E;
 }
 
-#caseList .igobuy .layer1 {
+#products .igobuy .layer1 {
   width      : 520px;
   height     : 290px;
   background : url(../images/case_10.jpg);
@@ -805,7 +803,7 @@ a:hover {
   left       : -10px;
 }
 
-#caseList .igobuy .layer2 {
+#products .igobuy .layer2 {
   width      : 220px;
   height     : 70px;
   background : url(../images/case_11.jpg);
@@ -813,7 +811,7 @@ a:hover {
   left       : 140px;
 }
 
-#caseList .road .layer1 {
+#products .road .layer1 {
   width       : 310px;
   height      : 340px;
   background  : url(../images/case_13.png);
@@ -823,7 +821,7 @@ a:hover {
   _filter     : progid:DXImageTransform.Microsoft.AlphaImageLoader(sizingMethod=crop, src='images/case_13.png');
 }
 
-#caseList .road .layer2 {
+#products .road .layer2 {
   width       : 284px;
   height      : 105px;
   background  : url(../images/case_14.png);
@@ -1197,7 +1195,7 @@ a:hover {
 }
 
 #caseTips {
-  margin-top     : 50px;
+  padding-top    : 100px;
   height         : 300px;
   padding-bottom : 100px;
   border-bottom  : 1px solid #EAEAEA;
@@ -1231,7 +1229,7 @@ a:hover {
 }
 
 #caseMobile {
-  margin-top     : 50px;
+  padding-top    : 100px;
   height         : 1000px;
   padding-bottom : 100px;
   border-bottom  : 1px solid #EAEAEA;
@@ -1428,4 +1426,18 @@ figure.sev img {
   background-image    : url('../images/w5.png');
   background-size     : 200px;
   background-position : center -2px;
+}
+
+#contact {
+  padding-top : 100px;
+}
+
+#contact .wrap {
+  padding-bottom : 100px;
+  border-bottom  : 1px solid #EAEAEA;
+}
+
+#location {
+  width  : 100%;
+  height : 500px;
 }
