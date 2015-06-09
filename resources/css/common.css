@@ -115,27 +115,56 @@ a:hover {
   background-size : 100%;
 }
 
-#nav ul {
+#nav ul.menu-left {
   width       : 800px;
-  height      : 40px;
   line-height : 57px;
   margin      : 0 auto;
   text-align  : center;
 }
 
-#nav ul li a {
+#nav ul.menu-left li a {
   width   : 110px;
   display : inline-block;
   color   : #999999;
 }
 
-#nav ul li a:hover, #nav ul li .cur {
+#nav ul.menu-left li a:hover, #nav ul li .cur {
   color           : #16bc00;
   text-decoration : none;
 }
 
-#nav ul li .cur {
+#nav ul.menu-left li .cur {
   border-bottom   : solid #ffd600;
+}
+
+#nav ul.menu-right {
+    position: absolute;
+    top: 0;
+    right: 252px;
+    line-height: 60px;
+}
+
+#nav ul.menu-right .btn1 {
+    color: #3e3400;
+    text-decoration: none;
+}
+#nav ul.menu-right .btn2 {
+    width: 80px;
+    color: #3e3400;
+    background-color: #ffd600;
+    text-decoration: none;
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    padding: 5px 24px;
+}
+#nav ul.menu-right .btn2:hover, #nav ul.menu-right .btn2:active, #nav ul.menu-right .btn2:focus, #nav ul.menu-right .btn2:visited {
+    background-color: #ffa200;
+}
+#nav ul.menu-right a {
+    margin-right: 15px;
+}
+#nav ul.menu-right a:after {
+    margin-right: 0;
 }
 
 /*foucsPic*/
@@ -896,24 +925,23 @@ a:hover {
 }
 
 #footer .link {
-  padding  : 50px 0;
-  position : relative;
+  padding   : 70px 0;
+  position  : relative;
+  text-align: center;
 }
 
 #footer .link ul {
-  width     : 180px;
+  width     : 96px;
   font-size : 14px;
-  float     : left;
+  margin    : 0 auto;
 }
 
 #footer .link ul li {
   font-size : 12px;
-  float     : left;
   width     : 60px;
 }
 
 #footer .link .cpyright li {
-  float : none;
   width : auto;
 }
 
@@ -922,7 +950,17 @@ a:hover {
   color     : #333333;
   width     : auto;
   display   : block;
-  float     : none;
+}
+
+#footer .link ul .tit span {
+    float: left;
+}
+
+#footer .link ul .tit:after {
+    content: '';
+    display: block;
+    height: 0;
+    clear: both;
 }
 
 #footer .link ul .logo {
@@ -935,8 +973,8 @@ a:hover {
   height      : 24px;
   display     : block;
   background  : url(../images/iconShare.png);
+  margin-right: 6px;
   float       : left;
-  margin-left : 35px;
 }
 
 #footer .link .sinaFloat {
@@ -954,7 +992,7 @@ a:hover {
   height     : 477px;
   background : url(../images/weixinFloat.png);
   position   : absolute;
-  left       : 10px;
+  left       : 310px;
   top        : -408px;
   z-index    : 200;
   display    : none;
@@ -962,8 +1000,8 @@ a:hover {
 
 #footer .link .cpyright {
   width : 300px;
-  float : right;
   color : #999999;
+  margin-top: 65px;
 }
 
 /*侧边栏*/
