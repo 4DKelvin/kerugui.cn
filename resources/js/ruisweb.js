@@ -1,22 +1,7 @@
 $(function(){
-	function navB(){
-		$("#nav").stop().animate({height:"70"}, 200);
-		$("#nav .logo").stop().animate({width:"42",height:"42",marginTop:"15"}, 200);
-		$("#nav ul").stop().animate({marginTop:"15"}, 200);
-	}
-	function navS(){
-		$("#nav").stop().animate({height:"100"}, 200);
-		$("#nav .logo").stop().animate({width:"52",height:"52",marginTop:"25"}, 200);
-		$("#nav ul").stop().animate({marginTop:"30"}, 200);
-	}
 	
 	$(window).scroll(function(){
 		var scroH = $(this).scrollTop();
-		if(scroH > 10){
-			if(!$("#nav").is(":animated")){ new navB;}
-		}else{
-			new navS;
-		}
 		if(scroH > $(window).height()){
 			$("#side").show(100);
 		}else{
@@ -40,7 +25,6 @@ $(function(){
 	$("#side .cur2").click(function(){
 		$body = (window.opera) ? (document.compatMode == "CSS1Compat" ? $('html') : $('body')) : $('html,body');
 		$body.stop().animate({scrollTop:0});
-		new navS;
 	})
 	
 	$("#foucsCase .explain").stop().animate({opacity:0.9},800);

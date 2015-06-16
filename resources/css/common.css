@@ -79,7 +79,7 @@ a:hover {
 }
 
 .wrap {
-  width  : 1000px;
+  width  : 1128px;
   margin : 0px auto;
 }
 
@@ -91,7 +91,7 @@ a:hover {
 /*nav*/
 #nav {
   width         : 100%;
-  height        : 100px;
+  height        : 60px;
   background    : #FFFFFF;
   border-bottom : 1px solid #E5E5E5;
   position      : fixed;
@@ -105,33 +105,66 @@ a:hover {
 }
 
 #nav .logo {
-  width           : 52px;
-  height          : 52px;
+  width           : 158px;
+  height          : 51px;
   display         : block;
-  margin          : 25px 0 0 40px;
+  margin          : 3px 0 0 40px;
   background      : url(../images/logo.png) 0 0 no-repeat;
   _background     : none;
   _filter         : progid:DXImageTransform.Microsoft.AlphaImageLoader(sizingMethod=crop, src='images/logo.png');
   background-size : 100%;
 }
 
-#nav ul {
+#nav ul.menu-left {
   width       : 800px;
-  height      : 40px;
-  line-height : 40px;
-  margin      : 30px auto;
+  line-height : 57px;
+  margin      : 0 auto;
   text-align  : center;
 }
 
-#nav ul li a {
+#nav ul.menu-left li a {
   width   : 110px;
   display : inline-block;
   color   : #999999;
 }
 
-#nav ul li a:hover, #nav ul li .cur {
-  color           : #333333;
+#nav ul.menu-left li a:hover, #nav ul li .cur {
+  color           : #16bc00;
   text-decoration : none;
+}
+
+#nav ul.menu-left li .cur {
+  border-bottom   : solid #ffd600;
+}
+
+#nav ul.menu-right {
+    position: absolute;
+    top: 0;
+    right: 252px;
+    line-height: 60px;
+}
+
+#nav ul.menu-right .btn1 {
+    color: #3e3400;
+    text-decoration: none;
+}
+#nav ul.menu-right .btn2 {
+    width: 80px;
+    color: #3e3400;
+    background-color: #ffd600;
+    text-decoration: none;
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    padding: 5px 24px;
+}
+#nav ul.menu-right .btn2:hover, #nav ul.menu-right .btn2:active, #nav ul.menu-right .btn2:focus, #nav ul.menu-right .btn2:visited {
+    background-color: #ffa200;
+}
+#nav ul.menu-right a {
+    margin-right: 15px;
+}
+#nav ul.menu-right a:after {
+    margin-right: 0;
 }
 
 /*foucsPic*/
@@ -685,15 +718,15 @@ a:hover {
 }
 
 #caseList .case, #products .case {
-  width    : 500px;
+  width    : 560px;
   height   : 500px;
   overflow : hidden;
   float    : left;
   position : relative;
 }
 
-#products .w1000 {
-  width : 1000px;
+#products .w1120 {
+  width : 1120px;
 }
 
 .case a {
@@ -892,24 +925,23 @@ a:hover {
 }
 
 #footer .link {
-  padding  : 50px 0;
-  position : relative;
+  padding   : 70px 0;
+  position  : relative;
+  text-align: center;
 }
 
 #footer .link ul {
-  width     : 180px;
+  width     : 96px;
   font-size : 14px;
-  float     : left;
+  margin    : 0 auto;
 }
 
 #footer .link ul li {
   font-size : 12px;
-  float     : left;
   width     : 60px;
 }
 
 #footer .link .cpyright li {
-  float : none;
   width : auto;
 }
 
@@ -918,7 +950,17 @@ a:hover {
   color     : #333333;
   width     : auto;
   display   : block;
-  float     : none;
+}
+
+#footer .link ul .tit span {
+    float: left;
+}
+
+#footer .link ul .tit:after {
+    content: '';
+    display: block;
+    height: 0;
+    clear: both;
 }
 
 #footer .link ul .logo {
@@ -931,8 +973,8 @@ a:hover {
   height      : 24px;
   display     : block;
   background  : url(../images/iconShare.png);
+  margin-right: 6px;
   float       : left;
-  margin-left : 35px;
 }
 
 #footer .link .sinaFloat {
@@ -950,7 +992,7 @@ a:hover {
   height     : 477px;
   background : url(../images/weixinFloat.png);
   position   : absolute;
-  left       : 10px;
+  left       : 310px;
   top        : -408px;
   z-index    : 200;
   display    : none;
@@ -958,8 +1000,8 @@ a:hover {
 
 #footer .link .cpyright {
   width : 300px;
-  float : right;
   color : #999999;
+  margin-top: 65px;
 }
 
 /*侧边栏*/
@@ -999,8 +1041,6 @@ a:hover {
   margin-left   : auto;
   margin-right  : auto;
   max-width     : 1200px;
-  padding-left  : 10px;
-  padding-right : 10px;
   font-family   : 'Microsoft Yahei', '宋体', segoe ui, Arial, sans-serif;
 }
 
@@ -1031,6 +1071,11 @@ a:hover {
 .grid-90 {
   float : left;
   width : 90%;
+}
+
+.grid-100 {
+    float: left;
+    width: 100%;
 }
 
 .grid-50 {
@@ -1070,6 +1115,7 @@ a:hover {
 .section-slogan {
   font-size   : 18px;
   line-height : 140%;
+  text-align  : left;
 }
 
 .about-box {
@@ -1103,7 +1149,8 @@ a:hover {
   height        : 60px;
   text-align    : center;
   line-height   : 60px;
-  margin-bottom : 20px;
+  margin-bottom : 40px;
+  margin-top    : 16px;
   background    : #FFD600;
 }
 
@@ -1147,7 +1194,7 @@ a:hover {
 }
 
 .case.wyx {
-  background : rgb(255, 105, 133);
+  background : #f3cf6f;
 }
 
 .case.wyx .layer2 {
@@ -1164,11 +1211,11 @@ a:hover {
 .case.wzf .layer2,
 .case.wzz .layer2 {
   top  : 40px;
-  left : 75px;
+  left : 45px;
 }
 
 .case.wfx {
-  background : #20201E;
+  background : #5d6e7c;
 }
 
 .case h2,
@@ -1207,10 +1254,6 @@ a:hover {
   text-align : center;
 }
 
-#tips dl:hover dd {
-  border-color : rgb(59, 195, 145);
-}
-
 #tips dl {
   display : inline-block;
   margin  : 20px 30px;
@@ -1225,7 +1268,6 @@ a:hover {
 #tips dd {
   display       : block;
   margin        : 5px 0;
-  border-bottom : 1px solid #EAEAEA;
 }
 
 #caseMobile {
@@ -1256,7 +1298,7 @@ a:hover {
   height        : 128px;
   border        : 3px solid #EAEAEA;
   border-radius : 3px;
-  margin        : 50px 35px;
+  margin        : 50px 15px 50px 45px;
 }
 
 .qr-code img {
@@ -1268,6 +1310,7 @@ a:hover {
 
 figure.sev {
   margin-left   : 20px;
+  margin-right  : 45px;
   float         : left;
   height        : 227px;
   width         : 128px;
@@ -1294,8 +1337,8 @@ figure.sev img {
   position : absolute;
   top      : -15px;
   right    : -15px;
-  width    : 100px;
-  height   : 100px;
+  width    : 220px;
+  height   : 220px;
 }
 
 #activities {
@@ -1389,6 +1432,7 @@ figure.sev img {
 }
 
 .wfx .layer1 {
+  margin-left: 50px;
   margin-top : 150px;
   text-align : center;
 }
